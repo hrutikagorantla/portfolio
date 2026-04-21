@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const PLANETS = [
-  { id: 'about',    label: 'About Me',          src: {process.env.PUBLIC_URL +'/planets/planet1.png'}, top: '15%', left: '75%', size: 182 },
-  { id: 'contact',  label: 'Contact Me',         src: {process.env.PUBLIC_URL +'/planets/planet2.png'}, top: '20%', left: '10%', size: 121 },
-  { id: 'hobbies',  label: 'Hobbies',            src: {process.env.PUBLIC_URL +'/planets/planet3.png'}, top: '65%', left: '8%', size: 210 },
-  { id: 'projects', label: 'Projects',           src: {process.env.PUBLIC_URL +'/planets/planet4.png'}, top: '48%', left: '78%', size: 264 },
-  { id: 'research', label: 'Research Interests', src: {process.env.PUBLIC_URL +'/planets/planet5.png'}, top: '72%', left: '50%', size: 140 },
+  { id: 'about',    label: 'About Me',          src: process.env.PUBLIC_URL +'/planets/planet1.png', top: '15%', left: '75%', size: 182 },
+  { id: 'contact',  label: 'Contact Me',         src: process.env.PUBLIC_URL +'/planets/planet2.png', top: '20%', left: '10%', size: 121 },
+  { id: 'hobbies',  label: 'Hobbies',            src: process.env.PUBLIC_URL +'/planets/planet3.png', top: '65%', left: '8%', size: 210 },
+  { id: 'projects', label: 'Projects',           src: process.env.PUBLIC_URL +'/planets/planet4.png', top: '48%', left: '78%', size: 264 },
+  { id: 'research', label: 'Research Interests', src: process.env.PUBLIC_URL +'/planets/planet5.png', top: '72%', left: '50%', size: 140 },
 ];
 
 function useStars(canvasRef) {
