@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import avatar from "./avatar.png";
 
 const PLANETS = [
   { id: 'about',    label: 'About Me',          src: '/planets/planet1.png', top: '15%', left: '75%', size: 182 },
